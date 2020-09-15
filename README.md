@@ -9,17 +9,18 @@ A wrapper for collecting and persisting the top N spBlitzCache results per serve
 ## Functionality
 ### Parameters
 * @Top INT (default: 5)
-  * The top N results per each '@SortOrder'
+  * the top N results per each '@SortOrder'
 * @DatabaseList VARCHAR(200) (default: NULL)
-  * An inclusive list of databases 
-    * If NULL then the @Top N *per server* versus *per database*
+  * an inclusive list of databases 
+    * if NULL then the @Top N *per server* versus *per database*
 * @SortOrder VARCHAR(200) (default: 'CPU')
-  * An inclusive list of @SortOrder's 
-    * If NULL then @SorderOrder = 'CPU' only
+  * an inclusive list of @SortOrder's 
+    * if NULL then @SorderOrder = 'CPU' only
+      * for a list of @SortOrder's see the notes section
 * @MinutesBack INT (default: -60)
-  * The minutes back which to look through cache
+  * the minutes back which to look through cache
 * @Help BIT (default = NULL)
-  * If @Help = 1 spBlitzCache's help will be executed
+  * if @Help = 1 spBlitzCache's help will be executed
 
 ### Gist
 * Dynamic SQL 
@@ -40,6 +41,6 @@ A wrapper for collecting and persisting the top N spBlitzCache results per serve
 ### Note(s)
 * Replace [¿] with your database name
 * Create a job calling the sproc on a schedule which fits your need
-  * If the schedule is **NOT** hourly be sure to adjust @MinutesBack accordingly 
+  * if the schedule is **NOT** hourly be sure to adjust @MinutesBack accordingly 
 * For a list of @SortOrder or anything related to spBlitzCache 
   * `EXEC spBlitzCache @Help = 1`
