@@ -4,6 +4,7 @@ Wrapper for collecting spBlitzCache results
 ## Requirements
 * spBlitzCache - https://github.com/BrentOzarULTD/SQL-Server-First-Responder-Kit
 * SQL Server 2016 RTM (or a string_slpit() equivalent function)
+* Utility database
 
 ## Functionality
 ### Parameters
