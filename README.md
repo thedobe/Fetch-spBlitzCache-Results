@@ -20,6 +20,22 @@ Wrapper for collecting spBlitzCache results
 * @Help BIT (default = NULL)
   * If @Help = 1 spBlitzCache's help will be executed
 
-### Note(s):
+### Gist
+* Dynamic SQL 
+* Basic error checking
+* Adjustments to OOTB spBlitzCache tables
+* Each @SortOrder creates two tables
+ * spBlitzCache_Results_CPU
+  * upserted table from Stage which persists the output of spBlitzCache
+ * spBlitzCache_Results_CPU_Stage
+  * truncated staging table which temporarily holds the output of spBlitzCache
+
+### Example Usage
+* The Top 10 CPU and Reads queries of the past sixty minutes for the entire server
+ * EXEC usp_fetch_spBlitzCache_Results @Top = 10, @SortOrder = 'CPU, Reads'
+* The Top 15 CPU, Reads, and Writes queries of the past thirty minutes per database
+ * EXEC usp_fetch_spBlitzCache_Results @Top = 15, @DatabaseList = 'myDatabase, theDatabase, db1', @SortOrder = 'CPU, Reads, Writes', @MinutesBack = -30
+ 
+### Note(s)
 * For a list of @SortOrder or anything related to spBlitzCache 
   * EXEC spBlitzCache @Help = 1
