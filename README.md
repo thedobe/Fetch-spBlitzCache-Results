@@ -12,10 +12,10 @@ Wrapper for collecting spBlitzCache results
   * The top N results per each '@SortOrder'
 * @DatabaseList VARCHAR(200) (default: NULL)
   * An inclusive list of databases 
-    * If NULL @Top N *per server* versus *per database*
+    * If NULL then the @Top N *per server* versus *per database*
 * @SortOrder VARCHAR(200) (default: 'CPU')
   * An inclusive list of @SortOrder's 
-    * If NULL @SorderOrder = 'CPU' only
+    * If NULL then @SorderOrder = 'CPU' only
 * @MinutesBack INT (default: -60)
   * The minutes back which to look through cache
 * @Help BIT (default = NULL)
