@@ -3,6 +3,7 @@ A wrapper for collecting and persisting the top N spBlitzCache results per serve
 
 ## Requirements
 * [spBlitzCache](https://github.com/BrentOzarULTD/SQL-Server-First-Responder-Kit) 
+  * developed against @Version = '7.98', @VersionDate = '20200808';
 * SQL Server 2016 RTM (or a string_slpit() equivalent)
 * Utility database
 
