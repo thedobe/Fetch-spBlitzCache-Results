@@ -39,6 +39,6 @@ Wrapper for collecting spBlitzCache results
  
 ### Note(s)
 * For a list of @SortOrder or anything related to spBlitzCache 
-  * EXEC spBlitzCache @Help = 1
+  * `EXEC spBlitzCache @Help = 1`
 * Create a job calling the sproc on a schedule which fits your need
-  * If the schedule is NOT hourly be sure to adjust the @MinutesBack accordingly 
+  * If the schedule is **NOT** hourly be sure to adjust the @MinutesBack accordingly 
