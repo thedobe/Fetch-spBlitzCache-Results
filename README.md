@@ -38,7 +38,8 @@ Wrapper for collecting spBlitzCache results
   * `EXEC usp_fetch_spBlitzCache_Results @Top = 15, @DatabaseList = 'myDatabase, theDatabase, db1', @SortOrder = 'CPU, Reads, Writes', @MinutesBack = -30`
  
 ### Note(s)
-* For a list of @SortOrder or anything related to spBlitzCache 
-  * `EXEC spBlitzCache @Help = 1`
+* Replace [¿] with your database name
 * Create a job calling the sproc on a schedule which fits your need
   * If the schedule is **NOT** hourly be sure to adjust @MinutesBack accordingly 
+* For a list of @SortOrder or anything related to spBlitzCache 
+  * `EXEC spBlitzCache @Help = 1`
