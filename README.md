@@ -12,7 +12,7 @@ Wrapper for collecting spBlitzCache results
   * The top N results per each '@SortOrder'
 * @DatabaseList VARCHAR(200) (default: NULL)
   * An inclusive list of databases 
-    * If NULL @Top N per server
+    * If NULL @Top N *per server* versus *per database*
 * @SortOrder VARCHAR(200) (default: 'CPU')
   * An inclusive list of @SortOrder's 
     * If NULL @SorderOrder = 'CPU' only
