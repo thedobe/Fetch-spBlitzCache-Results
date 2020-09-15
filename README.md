@@ -27,7 +27,7 @@ A wrapper for collecting and persisting the top N spBlitzCache results per serve
 * Dynamic SQL 
 * Basic error checking
 * Adjustments to OOTB spBlitzCache tables
-* Each @SortOrder creates two tables
+* Each @SortOrder creates two tables (@SortOrder = 'CPU' assumed)
   * spBlitzCache_Results_CPU
     * upserted table from Stage which persists the output of spBlitzCache
   * spBlitzCache_Results_CPU_Stage
