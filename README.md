@@ -45,3 +45,4 @@ A wrapper for collecting and persisting the top N spBlitzCache results per serve
   * if the schedule is **NOT** hourly be sure to adjust @MinutesBack accordingly 
 * For a list of @SortOrder or anything related to spBlitzCache 
   * `EXEC spBlitzCache @Help = 1`
+* @HideSummary = 1 and @IgnoreSystemDBs = 1 by default
