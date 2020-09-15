@@ -1,5 +1,5 @@
 # Fetch spBlitzCache Results
-Wrapper for collecting spBlitzCache results
+A wrapper for collecting and persisting the top N spBlitzCache results per server or per database
 
 ## Requirements
 * [spBlitzCache](https://github.com/BrentOzarULTD/SQL-Server-First-Responder-Kit) 
