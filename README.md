@@ -28,8 +28,8 @@ Wrapper for collecting spBlitzCache results
 * Each @SortOrder creates two tables
   * spBlitzCache_Results_CPU
     * upserted table from Stage which persists the output of spBlitzCache
-* spBlitzCache_Results_CPU_Stage
-  * truncated staging table which temporarily holds the output of spBlitzCache
+  * spBlitzCache_Results_CPU_Stage
+    * truncated staging table which temporarily holds the output of spBlitzCache
 
 ### Example Usage
 * The Top 10 CPU and Reads queries of the past sixty minutes for the entire server
