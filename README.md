@@ -35,7 +35,7 @@ A wrapper for collecting and persisting the top N spBlitzCache results per serve
 ### Example Usage
 * The Top 10 CPU and Reads queries of the past sixty minutes for the entire server
   * `EXEC usp_fetch_spBlitzCache_Results @Top = 10, @SortOrder = 'CPU, Reads'`
-* The Top 15 CPU, Reads, and Writes queries of the past thirty minutes per database
+* The Top 15 CPU, Reads, and Writes queries of the past thirty minutes per database list
   * `EXEC usp_fetch_spBlitzCache_Results @Top = 15, @DatabaseList = 'myDatabase, theDatabase, db1', @SortOrder = 'CPU, Reads, Writes', @MinutesBack = -30`
  
 ### Note(s)
