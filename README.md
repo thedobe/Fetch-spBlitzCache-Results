@@ -25,9 +25,9 @@ Wrapper for collecting spBlitzCache results
 * Basic error checking
 * Adjustments to OOTB spBlitzCache tables
 * Each @SortOrder creates two tables
- * spBlitzCache_Results_CPU
+  * spBlitzCache_Results_CPU
   * upserted table from Stage which persists the output of spBlitzCache
- * spBlitzCache_Results_CPU_Stage
+* spBlitzCache_Results_CPU_Stage
   * truncated staging table which temporarily holds the output of spBlitzCache
 
 ### Example Usage
