@@ -40,7 +40,7 @@ A wrapper for collecting and persisting the top N spBlitzCache results per serve
  
 ### Note(s)
 * Replace [¿] with your database name
-* Create a job calling the sproc on a schedule which fits your need
+* Create a job calling the sproc on a schedule which fits your needs
   * if the schedule is **NOT** hourly be sure to adjust @MinutesBack accordingly 
 * For a list of @SortOrder or anything related to spBlitzCache 
   * `EXEC spBlitzCache @Help = 1`
